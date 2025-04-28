@@ -7,16 +7,6 @@ import NavBar from '@/components/NavBar.vue';
 const deviceHeight = `${window.screen.height}px`;
 
 onMounted(async () => {
-  // Set fixed app height
-  const setAppHeight = () => {
-    const vh = window.screen.height;
-    console.log(vh, 'vh');
-
-    document.documentElement.style.setProperty('--app-height', `${window.screen.height}px`);
-  };
-  setAppHeight();
-  window.addEventListener('resize', setAppHeight);
-
   // Get initial safe area insets
   const { insets } = await SafeArea.getSafeAreaInsets();
   for (const [key, value] of Object.entries(insets)) {
