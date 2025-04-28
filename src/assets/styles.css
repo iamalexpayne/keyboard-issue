@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin 'tailwindcss-safe-area-capacitor';
+
+html,
+body {
+    @apply size-full;
+}
+
+* {
+    scrollbar-width: thin;
+}

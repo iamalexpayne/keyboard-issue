@@ -1,0 +1,55 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Local environment files
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Cache
+.cache/
+coverage/
+*.log
+
+# Optional: macOS-specific
+*.DS_Store
+
+# Optional: Windows-specific
+Thumbs.db
+ehthumbs.db
+
+# Lint and testing
+.eslintcache
+jest-cache/
+jest-config.json
+test-results/
+
+# Optional: Vite
+.vite/
+
+# Optional: Storybook
+.storybook-out/
+
+# Optional: Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Optional: Netlify or Vercel build output
+.netlify/
+.vercel/

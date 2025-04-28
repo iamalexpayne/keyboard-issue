@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.keyboardissue",
+  "appName": "Keyboard Issue",
+  "webDir": "dist",
+  "server": {
+    "url": "http://192.168.122.171:5173",
+    "cleartext": true
+  },
+  "launchShowDuration": 5000
+}
