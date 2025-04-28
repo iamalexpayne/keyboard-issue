@@ -1,12 +1,9 @@
 <script setup>
-// import { Capacitor } from '@capacitor/core';
-// import { Keyboard } from '@capacitor/keyboard';
 import { SafeArea } from 'capacitor-plugin-safe-area';
-import { computed, onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import Input from '@/components/Input.vue';
 import NavBar from '@/components/NavBar.vue';
 
-// const keyboardOpen = ref(false);
 const deviceHeight = `${window.screen.height}px`;
 
 onMounted(async () => {
@@ -48,11 +45,9 @@ const exampleText = ref('');
   <div
     class="fixed flex flex-col w-screen overflow-hidden"
     :style="{ height: deviceHeight }"
+    @click=""
   >
-    <div
-      class="relative h-full w-full px-6 pt-safe"
-      @click="dismissKeyboard"
-    >
+    <div class="relative h-full w-full px-6 pt-safe">
       <Input
         v-model="exampleText"
         enterkeyhint="done"
